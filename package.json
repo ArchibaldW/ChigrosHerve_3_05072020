@@ -1,0 +1,21 @@
+{
+  "name": "chigrosherve_3_05072020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArchibaldW/ChigrosHerve_3_05072020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArchibaldW/ChigrosHerve_3_05072020/issues"
+  },
+  "homepage": "https://github.com/ArchibaldW/ChigrosHerve_3_05072020#readme",
+  "browserslist": "last 4 versions"
+}
