@@ -1,0 +1,37 @@
+footer{
+    background-color: #353535;
+    padding: 20px 0 21px 25px;
+    flex-direction: column;
+
+    div {
+        margin-bottom: 15px;
+
+        &:first-child{
+            margin-bottom: 20px;
+
+            h2{
+                display:inline-block;
+            }
+        }
+
+        &:nth-child(2), &:nth-child(3){
+            font-weight: bold;
+        }
+
+        &:nth-child(3){
+            i{
+                font-size: 12px;
+            }
+        }
+
+        a{
+            color: white;
+        }
+
+        i{
+            width: 12px;
+            margin-right: 12px;
+        }
+    }
+    
+}

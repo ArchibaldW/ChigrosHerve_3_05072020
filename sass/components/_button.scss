@@ -1,0 +1,21 @@
+.pink_button{
+    box-shadow: 0 50px 25px -25px $color_secondary inset,0 0 5px grey; 
+    background-color: $color_primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 22px;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    min-width: 186px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s, box-shadow 0.5s;
+    
+    &:hover{
+        box-shadow: 0 50px 25px -25px lighten($color_secondary,3%) inset, 0 0 10px grey; 
+        background-color: lighten($color_primary,3%);
+    }
+}

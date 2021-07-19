@@ -1,6 +1,13 @@
 @import "./utils/variables";
 @import "./base/fonts";
+@import "./base/rules";
+@import "./base/classes";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/button";
+@import "./pages/delice";
+@import "./pages/francaise";
+@import "./pages/note";
+@import "./pages/palette";
+@import "./pages/index";
 
-body{
-    background-color: $color-primary;
-}
