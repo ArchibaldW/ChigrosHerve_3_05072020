@@ -1,0 +1,25 @@
+.heart{
+    display: flex;
+    i{
+        font-size: 2rem;
+        &:nth-child(2){
+            color: transparent;
+            position: absolute;
+            -webkit-background-clip: text;
+            background-clip: text;
+            &:hover{
+                cursor: pointer;
+                background: linear-gradient($color_primary, $color_secondary);
+                background-size: 100% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-position: bottom;
+                background-repeat: no-repeat;
+                -webkit-animation: animationHeart 0.5s linear;
+                animation: animationHeart 0.5s linear;
+            }
+        }
+    }
+    
+    
+}

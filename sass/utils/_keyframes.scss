@@ -1,0 +1,45 @@
+@keyframes animationHeart {
+  0% {
+    background-size: 100% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-timing{
+  0%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes lds-body{
+  0%{
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  95%{
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  100%{
+    opacity: 1;
+    pointer-events: initial;
+  }
+}

@@ -1,10 +1,13 @@
 @import "./utils/variables";
+@import "./utils/keyframes";
 @import "./base/fonts";
 @import "./base/rules";
 @import "./base/classes";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./components/loader";
 @import "./components/button";
+@import "./components/heart";
 @import "./pages/delice";
 @import "./pages/francaise";
 @import "./pages/note";

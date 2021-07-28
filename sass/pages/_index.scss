@@ -3,6 +3,10 @@
         justify-content: center;
     }
 
+    #content{
+        animation: lds-body 1.5s 600ms both;
+    }
+
     #location{
         height: 50px;
         color : #353535;
@@ -14,5 +18,163 @@
         i{
             margin-right: 19px;
         }
+        input{
+            background-color: rgb(234, 234, 234);
+            border: none;
+            font-weight: bold;
+            color: black;
+        }
+    }
+
+    #intro{
+        text-align: center;
+        background-color: rgb(246, 246, 246);
+        padding-bottom: 50px;
+        h1{
+            padding: 30px 50px;
+            font-size: 1.7rem;
+        }
+        :nth-child(2){
+            padding: 0 30px 30px;
+            font-size: 1.1rem;
+            color: #4d4d4d;
+        }
+    }
+
+    #fonctionnement{
+        padding: 40px 0;
+        h2{
+            padding : 15px 25px;
+        }
+        .list{
+            &_item{
+                justify-content: center;
+                &:nth-child(1){
+                    .list_icon{
+                        margin-right: 35px;
+                    }
+                }
+                &:nth-child(2){
+                    .list_icon{
+                        margin-right: 29px;
+                    }
+                }
+                &:nth-child(3){
+                    .list_icon{
+                        margin-right: 26px;
+                    }
+                }
+            }
+            &_num{
+                background-color: $color_primary;
+                color: white;
+                height: 20px;
+                width: 20px;
+                border-radius: 30px;
+                text-align: center;
+                align-self: center;
+                position: absolute;
+                transform: translateX(-150px);
+            }
+            &_link{
+                background-color: rgb(246, 246, 246);
+                width: 300px;
+                height: 50px;
+                border-radius: 15px;
+                align-items: center;
+                margin: 8px 0;
+                box-shadow: 0px 4px 4px 1px rgb(199, 196, 196);
+                &:hover{
+                    background-color: #feedff;
+                    box-shadow: 0px 7px 7px 1px rgb(199, 196, 196);
+                    .list_icon{
+                        color: $color_primary;
+                    }
+                }
+            }    
+            &_icon{
+                margin-left: 30px;
+                color: #616161;
+                font-size: 1.1rem;
+            }
+            &_txt{
+                font-weight: bold;
+            }
+        }
+    }
+
+    #restaurants{
+        background-color: rgb(246, 246, 246);
+        padding: 20px;
+        > div{
+            flex-direction: column;
+        }
+        .restaurant{
+            flex-direction: column;
+            height: 240px;
+            width: 335px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 4px 1px rgb(199, 196, 196);
+            margin: 15px 0;
+            transition: box-shadow 0.5s;
+
+            &:hover{
+                box-shadow: 0px 7px 7px 1px rgb(199, 196, 196);
+            }
+
+            &_new{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                background-color: #99e2d0;
+                color: #008160;
+                text-align: center;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            &_img{
+                position: relative;
+                width: 335px;
+                height: 168px;
+                border-radius: 20px 20px 0 0;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &_corps{
+                position: relative;
+                padding: 16px 10px;
+                justify-content: space-between;
+            }
+
+            &_lieux{
+                margin-top: 5px;
+            }
+
+            &:nth-child(1){
+                .restaurant_img{
+                    background-image: url("../imgs/restaurants/palette.jpg");
+                }
+            }
+            &:nth-child(2){
+                .restaurant_img{
+                    background-image: url("../imgs/restaurants/note.jpg");
+                }
+            }
+            &:nth-child(3){
+                .restaurant_img{
+                    background-image: url("../imgs/restaurants/francais.jpg");
+                }
+            }
+            &:nth-child(4){
+                .restaurant_img{
+                    background-image: url("../imgs/restaurants/delice.jpg");
+                }
+            }
+        }
+
     }
 }
