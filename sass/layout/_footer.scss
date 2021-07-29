@@ -8,8 +8,8 @@ footer{
 
         &:first-child{
             margin-bottom: 20px;
-            font-family: "shrikhand", Arial, Helvetica, sans-serif;
             font-size: 1.2rem;
+            @include font_title;
         }
 
         &:nth-child(2), &:nth-child(3){

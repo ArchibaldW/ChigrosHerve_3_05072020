@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/keyframes";
+@import "./utils/mixin";
 @import "./base/fonts";
 @import "./base/rules";
 @import "./base/classes";
@@ -8,9 +9,6 @@
 @import "./components/loader";
 @import "./components/button";
 @import "./components/heart";
-@import "./pages/delice";
-@import "./pages/francaise";
-@import "./pages/note";
-@import "./pages/palette";
+@import "./pages/pages";
 @import "./pages/index";
 

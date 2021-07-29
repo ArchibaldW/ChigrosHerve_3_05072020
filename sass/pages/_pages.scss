@@ -1,0 +1,150 @@
+.page{
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        justify-content: center;
+        background-color: white;
+        > a:first-child{
+            position: absolute;
+            left: 30px;
+            font-size: 1.3rem;
+        }
+    }
+    &_background{
+        img{
+            position: fixed;
+            height: 300px;
+            width: 100%;
+            z-index: -1;
+            top: 64px;
+            object-fit: cover;
+        }
+        
+    }
+    &_corps{
+        margin-top: 320px;
+        background-color: #f6f6f6;
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 60px;
+        > :last-child{
+            margin: 20px 0 0;
+        }
+    }
+    &_titre{
+        padding: 25px 15px;
+        justify-content: space-between;
+        h1{
+            @include font_title;
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+        .heart{
+            padding-right: 15px;
+        }
+    }
+    &_menus{
+        flex-direction: column;
+        @media (min-width : 992px){
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+    &_section{
+        padding: 15px;
+        flex-direction: column;
+        animation: page_load 1500ms 500ms both;
+        @media (min-width : 992px){
+            width: 30%;
+        }
+        &:nth-child(1){
+            animation-delay: 900ms;
+            transition: 700ms ease-in;
+        }
+        &:nth-child(2){
+            animation-delay: 1200ms;
+            transition: 700ms ease-in;
+        }
+        &:nth-child(3){
+            animation-delay: 1500ms;
+            transition: 700ms ease-in;
+        }
+        &_titre{
+            padding-bottom: 30px;
+            h2{
+                font-weight: 400;
+            }
+            .line{
+                height: 3px;
+                width: 30px;
+                background-color: #99e2d0;
+                padding-left: 15px;
+                margin-top: 5px;
+            }
+        }
+        &_items{
+            flex-direction: column;
+        }
+        &_item{
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 16px;
+            box-shadow: 0px 4px 4px 1px rgb(199, 196, 196);
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: all 200ms;
+            &_corps{
+                flex-direction: column;
+                flex: 1;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            &_titre{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-weight: bold;
+            }
+            &_description{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin-top: 5px;
+            }
+            &_price{
+                align-self: flex-end;
+                font-weight: bold;
+                padding: 0 15px;
+            }
+            &_check{
+                display: flex;
+                background-color: $color_tertiary;
+                justify-content: center;
+                align-items: center;
+                margin: -20px -90px -20px 0;
+                width: 70px;
+                transition-duration: 0.7s;
+                i{
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+            &:hover{
+                box-shadow: 0px 7px 7px 1px rgb(199, 196, 196);
+                .page_section_item_check{
+                    margin-right: -15px;
+                    i{
+                        transform: rotate(1turn);
+                        transition: 450ms 200ms ease-out;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
